@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'gothic_a1regular';
+    src: url('gothica1-regular-webfont.woff2') format('woff2'),
+         url('gothica1-regular-webfont.woff') format('woff'),
+         url('gothica1-regular-webfont.svg#gothic_a1regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothic_a1bold';
+    src: url('gothica1-bold-webfont.woff2') format('woff2'),
+         url('gothica1-bold-webfont.woff') format('woff'),
+         url('gothica1-bold-webfont.svg#gothic_a1bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
