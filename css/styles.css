@@ -30,6 +30,29 @@ body {
 .w-50{
     width: 50%;
 }
+.arrow-up {
+    z-index: 999;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: #d82027;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+}
+.arrow-up.active {
+    opacity: 1;
+}
 .main-header{
     background: url(../img/bg.jpg) no-repeat center top;
     background-size: cover;
@@ -77,9 +100,8 @@ body {
     color: #ffff;
 }
 .main-header__img{
-    overflow: hidden;
     padding-top: 45px;
-    padding-left: 40px;
+    padding-left: 140px;
 }
 .wrap-header-content__button{
     margin-top: 25px;
@@ -566,56 +588,6 @@ body {
             background-color: #1B1B1B;
         }
     }
-    /*.preloader {*/
-    /*    width: 120px;*/
-    /*    height: 120px;*/
-    /*    background: linear-gradient(315deg, #450e4b 0%, #3c0c41 24.48%, #cf0063 100%);*/
-    /*    left: 50%;*/
-    /*    top: 50%;*/
-    /*    position: fixed;*/
-    /*    transform: translate(-50%, -50%);*/
-    /*    animation: rotation 4s ease-in-out infinite;*/
-    /*}*/
-
-
-    /*@keyframes rotation {*/
-    /*    0% {*/
-    /*        border-radius: 5% 5% 5% 5%;*/
-    /*        transform: translate(-50%, -50%) rotate(0deg)*/
-    /*    }*/
-    /*    12.5% {*/
-    /*        border-radius: 50% 5% 5% 5%;*/
-    /*        transform: translate(-50%, -50%) rotate(45deg);*/
-    /*    }*/
-    /*    25% {*/
-    /*        border-radius: 50% 50% 5% 5%;*/
-    /*        transform: translate(-50%, -50%) rotate(90deg);*/
-    /*    }*/
-    /*    37.5% {*/
-    /*        border-radius: 50% 50% 50% 5%;*/
-    /*        transform: translate(-50%, -50%) rotate(135deg);*/
-    /*    }*/
-    /*    50% {*/
-    /*        border-radius: 50% 50% 50% 50%;*/
-    /*        transform: translate(-50%, -50%) rotate(180deg);*/
-    /*    }*/
-    /*    62.5% {*/
-    /*        border-radius: 5% 50% 50% 50%;*/
-    /*        transform: translate(-50%, -50%) rotate(225deg);*/
-    /*    }*/
-    /*    75% {*/
-    /*        border-radius: 5% 5% 50% 50%;*/
-    /*        transform: translate(-50%, -50%) rotate(270deg);*/
-    /*    }*/
-    /*    87.5% {*/
-    /*        border-radius: 5% 5% 5% 50%;*/
-    /*        transform: translate(-50%, -50%) rotate(315deg);*/
-    /*    }*/
-    /*    100% {*/
-    /*        border-radius: 5% 5% 5% 5%;*/
-    /*        transform: translate(-50%, -50%) rotate(360deg);*/
-    /*    }*/
-    /*}*/
     /*RESPONSIVE*/
 
     /*max-width: 1330px*/
@@ -652,6 +624,11 @@ body {
         }
     }
 
+    @media (max-width: 1120px) {
+        .main-header__img{
+            display: none;
+        }
+    }
     /*max-width: 1100px*/
     @media (max-width: 1100px){
         .food-post >div{

@@ -22,6 +22,11 @@
     </head>
         
     <body>
+        <div id="up"></div>
+        <a class="arrow-up" href="#up">
+            <i class="fa-solid fa-arrow-up fa-fw"></i>
+        </a>
+
         <div class="page">
             <header class="main-header">
                 <div class="container">
@@ -78,8 +83,8 @@
                             </div>
                         </div>
 
-                        <div class="main-header__img animate__animated animate__lightSpeedInRight ">
-                            <img src="img/telephone.png" alt="">
+                        <div class="main-header__img animate__animated animate__lightSpeedInRight" id="scene">
+                            <img data-depth="0.6" src="img/telephone.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -420,6 +425,8 @@
         <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="vendor/number/jquery.rollNumber.js"></script>
         <script src="vendor/number/jquery.waypoints.min.js"></script>
+        <script src="vendor/parallax-master/parallax.js"></script>
+        <script src="fonts/awesome/Font-awesome.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

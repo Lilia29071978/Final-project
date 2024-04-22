@@ -4,6 +4,28 @@ setTimeout(() => {
 }, 3000);
 jq2 = $.noConflict();
 jq2(function( $ ) {
+	var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene);
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 670) {
+			$('.arrow-up').addClass('active');
+		} else {
+			$('.arrow-up').removeClass('active');
+		}
+	});
+
+	$('.arrow-up').on( 'click', function(e){
+		e.preventDefault();
+		var el = $(this);
+		var dest = el.attr('href'); // получаем направление
+		if(dest !== undefined && dest !== '') { // проверяем существование
+			$('html').animate({
+					scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+				}, 500 // скорость прокрутки
+			);
+		}
+	});
 	$(window).scroll(function() {
 		let height_window = $(window).height();
 		let speed_animation = height_window / 2.5;
