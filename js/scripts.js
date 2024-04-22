@@ -1,7 +1,7 @@
 setTimeout(() => {
 	document.querySelector('.preloader').style.display = 'none';
 	document.querySelector('.page').style.opacity = '1';
-}, 5000);
+}, 3000);
 jq2 = $.noConflict();
 jq2(function( $ ) {
 	$(window).scroll(function() {
@@ -40,16 +40,7 @@ jq2(function( $ ) {
 			let topOfWindow = $(window).scrollTop();
 
 			if(imgPos < topOfWindow + speed_animation){
-				$(this).addClass('animate__animated animate__bounceInUp');
-				$(this).css('visibility', 'visible');
-			}
-		});
-		$('.advertising').each(function() {
-			let imgPos = $(this).offset().top;
-			let topOfWindow = $(window).scrollTop();
-
-			if(imgPos < topOfWindow + speed_animation){
-				$(this).addClass('animate__animated animate__slideInDown');
+				$(this).addClass('animate__animated animate__fadeInTopLeft');
 				$(this).css('visibility', 'visible');
 			}
 		});

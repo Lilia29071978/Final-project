@@ -302,10 +302,6 @@ body {
     color: #6B6B6B;
     margin: 0 auto;
 }
-.advertising{
-    width: 100%;
-    visibility: hidden;
-}
 .get-started{
     background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
     padding: 164px 0;
@@ -457,6 +453,7 @@ body {
         padding-top: 88px;
         display: flex;
         justify-content: center;
+        margin-bottom: 140px;
     }
     .owl-dots button.owl-dot{
         width: 7px;
@@ -470,14 +467,12 @@ body {
         background-color: #222;
     }
     .advertising__block-img{
-        padding-top: 140px;
         padding-left: 120px;
     }
     .advertising__tel{
         margin-top: 160px;
-        height: 518px;
+        height: 488px;
         background: url(../img/adversting-tel.jpg) no-repeat center;
-        background-size: cover;
     }
     .page{
         opacity: 0;
@@ -755,7 +750,9 @@ body {
         .main-header__list{
             flex-direction: row-reverse;
         }
-
+        .advertising{
+            display: none;
+        }
         .hamburger {
             width: 40px;
             height: 28px;
